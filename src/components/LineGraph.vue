@@ -1,6 +1,6 @@
 <template>
   <svg :width="width" :height="height">
-    <path :d="line(data)" stroke="black" stroke-width="1" fill="none" />
+    <path :d="line(data)" stroke="black" stroke-width="1" fill="none" style="transition: d 400ms" />
     <g ref="xAxis" :transform="`translate(0, ${height - margin.bottom})`" />
     <g ref="yAxis" :transform="`translate(${margin.left}, 0)`" />
   </svg>
